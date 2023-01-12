@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet@Gym</title>
+</head>
+
+<body>
+    <h1>Terminplaner</h1>
+
+    <form action="upload_logic.php" method="post">
+        <label for="first-name">Vorname:</label>
+        <input type="text" id="first-name" name="first-name" required>
+        <br>
+        <label for="last-name">Nachname:</label>
+        <input type="text" id="last-name" name="last-name" required>
+        <br>
+        <label for="date">Datum:</label>
+        <input type="date" id="date" name="date" required>
+        <br>
+        <label for="muscle-groups">Muskelgruppen:</label>
+        <br>
+        <select id="muscle-groups" name="muscle-groups" multiple>
+            <option value="chest">Brust</option>
+            <option value="triceps">Trizeps</option>
+            <option value="legs">Beine</option>
+            <option value="shoulders">Schulter</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Termin erstellen">
+    </form>
+
+    <h2>Bisherige Termine</h2>
+    <form action="list_logic.php" method="post">
+        <input type="submit" value="Terminliste anzeigen">
+    </form>
+
+</body>
+
+</html>
